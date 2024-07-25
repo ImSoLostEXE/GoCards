@@ -1,0 +1,10 @@
+{{define "deckContents"}}
+Here are the contents of the deck:
+{{ end }}
+
+
+{{define "cardList"}}
+    {{ range. }}
+    <p> {{ . | cname }}{{ . | csuit }} - {{ . | cval }} </p>
+    {{ end }}
+{{end}}
